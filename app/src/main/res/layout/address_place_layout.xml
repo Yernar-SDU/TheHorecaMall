@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_home_address"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:onClick="addAddressToRecyclerView"
+    app:layout_constraintTop_toBottomOf="@id/header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:text="0"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image_geo"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/geo_location_orange"/>
+
+
+    <LinearLayout
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_office"
+            android:fontFamily="@font/roboto"
+            android:textFontWeight="400"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_office"
+                android:fontFamily="@font/roboto"
+                android:textFontWeight="400"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/podezd"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_office"
+                android:fontFamily="@font/roboto"
+                android:textFontWeight="400"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_white_black"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    

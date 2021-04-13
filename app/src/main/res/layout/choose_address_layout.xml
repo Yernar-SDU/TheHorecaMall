@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="37dp"
+                android:id="@+id/header"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35sp"
+                    android:src="@drawable/menu"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="24sp"
+                    android:text="Избранные адреса"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textFontWeight="500"/>
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/choose_address_recycleView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/add_new_address"
+                android:layout_marginTop="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/choose_address_recycleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addAddressToRecyclerView">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible"
+                    android:id="@+id/position"
+                    android:text="-1"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_add_address"/>
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_address"
+                    android:fontFamily="@font/roboto"
+                    android:textFontWeight="400"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/add_new_address"
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:background="@color/background_white_black"/>
+
+            <FrameLayout
+                android:elevation="10dp"
+                android:id="@+id/fragmentForAddingAddresses"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"/>
+            <FrameLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/fragmentForNewAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

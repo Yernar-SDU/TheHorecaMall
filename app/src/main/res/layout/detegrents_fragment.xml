@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <androidx.viewpager.widget.ViewPager
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/recycleViewForScrollingImages"/>
+
+            <LinearLayout
+                android:id="@+id/menu"
+                app:layout_constraintTop_toBottomOf="@id/recycleViewForScrollingImages"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+
+                <ExpandableListView
+                    android:id="@+id/menu_items"
+                    android:layout_width="match_parent"
+                    android:divider="@null"
+                    android:groupIndicator="@null"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/kitchen"
+                app:layout_constraintTop_toBottomOf="@id/menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/kitchen"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/stroke1"
+                app:layout_constraintTop_toBottomOf="@id/kitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circle_"/>
+
+                <TextView
+                    android:textFontWeight="500"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/lorem_ipsum"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/stroke2"
+                app:layout_constraintTop_toBottomOf="@id/stroke1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circle_"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="500"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/lorem_ipsum"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stroke3"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/stroke2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circle_"/>
+
+                <TextView
+                    android:textFontWeight="500"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/lorem_ipsum"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/icon_menu"
+                app:layout_constraintTop_toBottomOf="@id/stroke3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/detergent"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/skincare"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fabric"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/equipment2"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/icon_menu2"
+                app:layout_constraintTop_toBottomOf="@id/icon_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/detergent"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/skincare"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fabric"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/equipment2"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableware_sm_caps"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
+

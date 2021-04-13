@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openMainActivityPage"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/detegrents_small_caps"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

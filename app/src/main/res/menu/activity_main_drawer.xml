@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/log_in"
+            android:icon="@drawable/login"
+            android:title="@string/log_in" />
+        <item
+            android:id="@+id/sellerlogin"
+            android:icon="@drawable/sellerlogin"
+            android:title="@string/seller_log_in" />
+        <item
+            android:id="@+id/categories"
+            android:icon="@drawable/categories"
+            android:title="@string/categories" />
+        <item
+            android:id="@+id/detegrents"
+            android:icon="@drawable/detegrents"
+            android:title="@string/detegrents"
+            android:titleCondensed="@string/detegrents"
+            android:enabled="true">
+
+            <menu>
+                <item
+                    android:id="@+id/detegrents_child1"
+                    android:title="@string/detegrents_child"
+                    android:icon="@drawable/detegrents"/>
+            </menu>
+
+        </item>
+
+
+        <item
+            android:id="@+id/cosmetics"
+            android:icon="@drawable/cosmetics"
+            android:title="@string/cosmetics"/>
+
+        <item
+            android:id="@+id/textiles"
+            android:icon="@drawable/textiles"
+            android:title="@string/textiles"/>
+
+
+        <item
+            android:id="@+id/equipment"
+            android:icon="@drawable/equipment"
+            android:title="@string/equipment"/>
+
+        <item
+            android:id="@+id/tableware"
+            android:icon="@drawable/tableware"
+            android:title="@string/tableware"/>
+
+
+        <item
+            android:id="@+id/furniture"
+            android:icon="@drawable/furniture"
+            android:title="@string/furniture"/>
+
+        <item
+            android:id="@+id/inventory"
+            android:icon="@drawable/inventory"
+            android:title="@string/inventory"/>
+
+        <item
+            android:id="@+id/foodProducts"
+            android:icon="@drawable/foodproducts"
+            android:title="@string/food_products"/>
+
+        <item
+            android:id="@+id/aromatization"
+            android:icon="@drawable/aromatization"
+            android:title="@string/aromatization"/>
+
+        <item
+            android:id="@+id/disinfection"
+            android:icon="@drawable/disinfection"
+            android:title="@string/disinfection"/>
+
+        <item
+            android:id="@+id/consumables"
+            android:icon="@drawable/consumables"
+            android:title="@string/consumables"/>
+
+        <item
+            android:id="@+id/comparisons"
+            android:icon="@drawable/comparisons"
+            android:title="@string/comparisons"/>
+
+        <item
+            android:id="@+id/favorites"
+            android:icon="@drawable/favorites"
+            android:title="@string/favorites"/>
+
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/orders"
+            android:title="@string/orders"/>
+
+        <item
+            app:itemIconSize="10dp"
+            android:id="@+id/changelanguage"
+            android:icon="@drawable/changelanguage"
+            android:title="@string/change_language"/>
+
+        <item
+            app:itemIconSize="2dp"
+            android:id="@+id/kazakhstan"
+            android:icon="@drawable/kazakhstan"
+            android:title="@string/kazakhstan"/>
+
+        <item
+            app:itemIconSize="@dimen/nav_header_height"
+            android:id="@+id/almaty"
+            android:icon="@drawable/almaty"
+            android:title="@string/almaty">
+
+
+        </item>
+    </group>
+
+
+
+</menu>
